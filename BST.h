@@ -89,12 +89,8 @@ public:
   int size() { return nodecount; }
 
   void print() const { // Print the contents of the BST
-    if (root == NULL) {
-      cout << "The BST is empty.\n";
-    } else {
-      printPreOrder(root, 0);
-      printhelp(root, 0);
-    }
+    if (root == NULL) cout << "The BST is empty.\n";
+    else printhelp(root, 0);
   }
 };
 
